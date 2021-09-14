@@ -18,6 +18,11 @@ body{
     margin: auto 10px;
 }
 
+::selection {
+    background: $primary;
+    color: white;
+}
+
 /*============================================================================*/
 /* General Settings */
 
