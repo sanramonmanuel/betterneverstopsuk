@@ -1,0 +1,149 @@
+h1, h2, h3, h4, h5{
+    font-family: 'Open Sans', sans-serif;
+    line-height: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, p, a{
+    font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: $MainB;
+    font-size: 18px;
+    margin: auto 10px;
+}
+
+/*============================================================================*/
+/* General Settings */
+
+/*============================================================================*/
+/*Alert*/
+.alert-success,
+.alert.alert-success {
+    @include hoverbtn();
+    margin:10px auto;
+}
+
+/*============================================================================*/
+/* Button Component */
+.t-linkbutton{
+    .btn.btn-primary,
+    .btn-primary{
+        background:$primary;
+    }
+}
+
+.btn{
+    &:hover,
+    &:active,
+    &:focus{
+        outline: none;
+    }
+}
+
+/*============================================================================*/
+/* Status Labels */
+.t-datatable,
+.t-list,
+.t-form,
+.t-logincomponent,
+.t-detail,
+.t-kanban,
+.t-timeline{
+    .badge.badge-wh-1{
+        @include stats($statpurple);
+    }
+
+    .badge.badge-wh-2{
+        @include stats($secondary);
+    }
+    .badge.badge-wh-3{
+        @include stats($statlightb);
+    }
+    .badge.badge-wh-4{
+        @include stats($statorange);
+    }
+    .badge.badge-wh-5{
+        @include stats($statred);
+    }
+    .badge.badge-wh-6{
+        padding: 5px 10px;
+    }
+    .badge.badge-wh-7{
+        @include stats($statpink);
+    }
+    .badge.badge-wh-8{
+        @include stats($statyellow);
+    }
+    .badge.badge-wh-9{
+        @include stats ($primary);
+    }
+    .badge.badge-wh-10{
+        @include stats ($statblack);
+    }
+}
+
+#goTopBtn {
+    background:none;
+    border: none;
+    bottom: -20px;
+    cursor: pointer;
+    display: none;
+    font-size: 18px;
+    opacity: 1;
+    outline: none;
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    i{
+        color: white;
+        background: $primary;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        display:grid;
+        place-items:center;
+        &:hover{
+            background: white;
+            border:2px solid $primary;
+            @include btnshadow();
+            color: $primary;
+        }
+    }
+}
+
+#goBackBtn {
+    background:none;
+    border: none;
+    bottom: -20px;
+    cursor: pointer;
+    display: none;
+    font-size: 18px;
+    opacity: 1;
+    outline: none;
+    padding: 15px;
+    position: fixed;
+    left:0;
+    z-index: 99;
+    i{
+        color: white;
+        background: $primary;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        display:grid;
+        place-items:center;
+        &:hover{
+            background: white;
+            border:2px solid $primary;
+            @include btnshadow();
+            color: $primary;
+        }
+    }
+}

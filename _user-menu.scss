@@ -1,0 +1,24 @@
+/*============================================================================*/
+/*User Menu Component*/
+.x-user-menu a{
+    font-weight: 700;
+    padding: 5px 10px;
+    margin: 5px auto;
+    &:hover,
+    &:focus,
+    &:active{
+        background:$primary;
+        color: #ffffff;
+        text-decoration:none;
+        outline:none;
+    }
+}
+.x-signup-btn {
+    color: $secondary;
+    font-weight: 700;
+}
+.x-login-btn{
+    background: $secondary;
+    color: $itext;
+    font-weight: 700;
+}

@@ -1,0 +1,67 @@
+/*============================================================================*/
+/* HTML Component */
+.t-html {
+    margin: 10px auto;
+    padding:1rem 3rem;
+
+    h1,h2,h3,h4,h5,h6{
+        color: $primary;
+    }
+
+    h1{
+        font-size:calc(1vw + 1.8rem);
+    }
+
+    h2{
+        font-size:calc(1vw + 1.5rem);
+    }
+
+    h3{
+        font-size:calc(1vw + 1.2rem);
+    }
+
+    h4{
+        font-size:calc(1vw + 1rem);
+    }
+
+    h5{
+        font-size:calc(1vw + .75rem);
+    }
+
+    h6{
+        font-size: calc(1vw + .6rem);
+    }
+
+    hr{
+        @include primasegunda();
+        height: 3px;
+        border-radius: 5px;
+    }
+
+    .far,
+    .fas {
+        color: $primary;
+        font-weight: bold;
+        margin:auto 5px;
+    }
+
+    span {
+        display: inline-flex;
+    }
+
+    .backbtn {
+        background: $primary;
+        border:none;
+        border-radius: 5px;
+        color:#fff;
+        padding: 10px 30px;
+        opacity: .9;
+        &:hover{
+            opacity: 1;
+        }
+        
+        .fas{
+            color:white;
+        }
+    }
+}

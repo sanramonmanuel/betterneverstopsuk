@@ -1,0 +1,258 @@
+/*============================================================================*/
+/* Table Component */
+.t-datatable{
+    margin:10px auto;
+    padding:1rem;
+    .table-responsive{
+        @include shadows();
+        background-color:#ffffff;
+        border-radius:1rem;
+        border: 3px solid $primary;
+        box-shadow: 5px 5px $primary;
+        padding:2rem;
+        text-align:left;
+    }
+    h3{
+        color:$primary;
+        font-weight: bold;
+        margin:0;
+        padding: 0 0 10px 10px;
+        @include media ('<tablet'){
+        border-bottom-style: inset;
+        border-color: $secondary;
+        }
+    }
+    .tb-select-row:hover{
+        @include hoverbtn();
+    }
+   .input-sm{
+       @include clean();
+        border-bottom-right-radius: 3px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        border-radius: 3px;
+        border-top-right-radius: 3px;
+        color: #333;
+        font-size: 12px;
+        height: 30px;
+        line-height: 1.5;
+    }
+   .input-sm:focus{
+        background: none;
+        box-shadow: none;
+    }
+    .btn.btn-primary.btn-sm.m-l-xs.t-refresh-button{
+        &:hover{
+            @include defaulthov;
+        }
+    }
+    .filter-tabs {
+        background:none;
+        float:right;
+    }
+    .filters-box-display .filter-items{
+        border:1px dashed $primary;
+        .filter-item{
+            background-color:$primary;
+            color: #ffffff;
+            i{
+                background-color:$secondary;
+                color: #ffffff;
+                &:hover{
+                    color:$primary;
+                }
+            }
+        }
+    }
+   .table-wrap>.table tr{
+        background-color:#ffffff;
+        border-bottom: 1px solid $prima1;
+        color:$primary;
+    }
+
+   table>tbody>tr{
+        border:none;
+    }
+    table,
+    table>tbody>tr>th,
+    table>tfoot>tr>th,
+    table>thead>tr>td,
+    table>tbody>tr>td,
+    table>tfoot>tr>td{
+        border:none;
+        line-height: 2.5;
+        padding-bottom:1.5rem;
+        padding-top:1.5rem;
+    }
+    .group-wrap.with-group{ /*filtered groups*/
+        background: none;
+        border:none;
+        padding: 0 25px 20px;
+    }
+    .group-wrap span.collapsed-icon{
+        color: $secondary;
+    }
+    .group-wrap.with-group .field-title{
+        color: $secondary;
+    }
+    .group-wrap.with-group .val-title{
+        color: $primary;
+        font-size:18px;
+    }
+    .group-wrap.with-group span.count-title,
+    .group-wrap.with-group span.parent-collapse{
+        background: none;
+        color:$primary;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .group-wrap.with-group .group-title{
+        border-bottom: 2px solid transparent;
+        padding-bottom:2px;
+        &:hover{
+            background: none;
+            border-bottom: 2px solid $secondary;
+        }
+    }
+    table>tbody>tr>td{
+        color:#444;
+        font-size: 15px;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    .allow-inline-edit{
+        border:2px solid transparent;
+        box-shadow: none;
+        &:hover{
+            border:2px solid white;
+            box-shadow: inset 100px 100px #ffffff;
+            &::after{
+            background: #ffffff;
+            padding:0px;
+            right:5px;
+            top:0px;
+            color:$itext;
+            }
+        }
+    }
+    .table-hover>tbody>tr:hover{
+        background: $prima1;
+        border-bottom: 1px solid $primary;
+        box-shadow: 0 -1px $primary;
+    }
+    table>thead>tr>th{
+        border:none;
+        color:$primary;
+        font-size:14px;
+        font-weight:bold;
+        letter-spacing:1px;
+        padding-bottom:1.5rem;
+        padding-top:1.5rem;
+        text-transform:uppercase;
+        transition: all .1s ease-in-out;
+    }
+    .pagination>.disabled>a,
+    .pagination>.disabled>span{
+        @include primarybtn(none);
+        padding: 6px 12px;
+        &:hover{
+            @include hoverbtn();
+        }
+    }
+    .pagination-sm > li > a,
+    .pagination-sm > li > span{
+        @include primarybtn(none);
+        padding: 6px 12px;
+        &:hover{
+            @include hoverbtn();
+        }
+    }
+    .pagination>.active>a,
+    .pagination>.active>span{
+        @include hoverbtn();
+        padding: 6px 12px;
+    }
+    .table .sortable:hover{
+        background-color:#ffffff;
+        box-shadow: inset 0 -2px $primary;
+    }
+    .td-link {
+        font-weight:bold;
+        @include linkhover();
+        &:hover{
+            color:$secondary;
+        }
+    }
+    table a:not(.btn){
+        text-decoration:none;
+    }
+    .table-actions{
+        @include clean();
+        margin-top:30px;
+    }
+    .t-records-button{
+        @include norecord();
+    }
+    .form-control{
+        background:none;
+        border:none;
+        border-bottom: 2px solid transparent;
+        border-radius: 0px;
+        box-shadow: none;
+        color:$primary;
+        font-weight: bold;
+        outline:none;
+        &:hover,
+        &:active,
+        &:focus{
+            border-bottom: 2px solid $primary;
+            box-shadow: none;
+            color:$primary;
+        }
+    }
+    .btn.btn-primary.btn-sm.m-l-xs.t-refresh-button{
+        &:hover{
+            background:$primary;
+            color:#ffffff;
+        }
+    }
+    .btn.btn-primary.btn-sm.m-l-xs.t-new-record-button {
+        background: #ffffff;
+        border:2px solid $primary;
+        border-radius: 5px;
+        color:$primary;
+        transition: all .1s ease-in-out;
+        &:hover{
+            background: $primary;
+            @include btnshadow();
+            color:#fff;
+        }
+    }
+    .btn.btn-info.btn-sm.m-l-xs.t-batch-button{
+        &:hover{
+            color: $secondary;
+        }
+    }
+    .nav-tabs {
+        background:#ffffff;
+        border:none;
+    }
+    .nav.nav-tabs>li>a{
+        @include primarybtn(none);
+        border-radius: 5px;
+        margin: 2px 2px;
+        padding: 5px 10px;
+        &:hover,
+        &:focus{
+            box-shadow: 0 2px 4px rgba(0,0,0,.3);
+            @include media ('<tablet'){
+                transform:none;
+            }
+        }
+    }
+    .filter-tabs .nav-tabs > li.active > a{
+        background: $secondary;
+        outline:none;
+        color: white;
+    }
+}

@@ -1,0 +1,58 @@
+/*============================================================================*/
+/* Card Component */
+.t-card .af-card-component{
+    background:#ffffff;
+    border-radius:15px;
+    border:none;
+    box-shadow:0 8px 24px rgba(149, 157, 165, 0.2);
+    margin:10px auto;
+    padding:1rem 3rem;
+    &:hover{
+        box-shadow:0 7px 29px 0 rgba(100, 100, 111, 0.2);
+    }
+}
+.t-card{
+    .header.t-card-header,
+    .header.t-card-header span{
+        background: #ffffff;
+        border-bottom:none;
+        color:$primary;
+        font-size:20px;
+        font-weight: bold;
+        text-align:center;
+    }
+    .con{
+        padding-bottom:1rem;
+        padding-top:1rem;
+        position:relative;
+    }
+    .fal::before{
+        color:$primary;
+    }
+    .af-card-component .con.left-icon i.fal{
+        font-size:20px;
+        padding-bottom:2rem;
+    }
+    .val.t-card-prefix{
+        @include psfix(40px);
+    }
+    .val.t-card-value{
+        @include psfix(50px);
+    }
+    .val.t-card-suffix{
+        @include psfix(40px);
+    }
+    .footer.t-card-footer{
+        border:none;
+        & span{
+            @include balance();
+            
+            background: $itext;
+            border-top: 2px dashed $secondary;
+            font-weight: 500;
+            padding-top: 1.5rem;
+            position: relative;
+            text-align:center;
+        }
+    }
+}

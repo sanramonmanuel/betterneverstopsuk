@@ -1,0 +1,49 @@
+/*Theme Name:Better Never Stops - Ideal Furniture Theme*/
+/*ThemeTheme URI:*/
+/*Description:This is the Official Theme for Ideal Furniture*/
+/*Designer: Manuel San Ramon*/
+/*Template:*/
+/*Version:1.0.0*/
+/*Tags:green, orange, blue, branded, customized*/
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* Branding */
+@import "branding-furnitureVillage";
+@import "branding-idealFurniture";
+@import "branding-ais";
+
+/* Styling For All Components */
+@import "mixins";
+@import "_include-media.scss";
+@import "globals";
+
+/* Components - DO NOT DELETE*/
+@import "accordion";
+@import "breadcrumbs";
+@import "calendar";
+@import "card";
+@import "chart";
+@import "detail";
+@import "form";
+@import "html";
+@import "image";
+@import "kanban";
+@import "list";
+@import "login";
+@import "map";
+@import "menu";
+@import "modal";
+@import "profile";
+@import "search";
+@import "sidebar";
+@import "signup";
+@import "table";
+@import "user-menu";
+
+// Customization Starts Here

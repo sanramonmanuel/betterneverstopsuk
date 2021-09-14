@@ -1,0 +1,83 @@
+/*============================================================================*/
+/* Kanban Component */
+.t-kanban{
+    @include shadows;
+    border-radius: 15px;
+    margin:10px auto;
+    padding:1rem 3rem;
+    label {
+        color: $primary;
+    }
+    .kanban-wrap{
+        background-color: $itext;
+        border:unset;
+        .kanban-item {
+            border:2px solid  $primary;
+        }
+        .kanban-header {
+            margin:5px auto;
+        }
+        .kanban-header h2 {
+            border-top-left-radius: 0.42rem;
+            border-top-right-radius: 0.42rem;
+            box-shadow: none;
+            color: $primary;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 0;
+            padding: 5px 0px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .kanban-header-tools {
+            right: -10px;
+            top: -10px;
+        }
+        .kanban-header-tools > span{
+            background:$primary;
+            border:$primary;
+            color: $itext;
+        }
+        .kanban-header-tools>span.has-action {
+            background: $secondary;
+            border-color: $secondary;
+            border-radius: 50%;
+            color: $itext;
+            height: 30px;
+            padding-top: 5px;
+            text-align: center;
+            width: 30px;
+            &:hover{
+                background: $primary;
+                border-color: $primary;
+            }
+        }
+        .kanban-card .col-md- {
+            padding: 0 10px;
+        }
+        .kanban-card {
+            background:rgba(220, 179, 141,.1); 
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all .1s ease-in-out;
+        }
+    }
+}
+/* Scroll bar*/
+/* width */
+.t-kanban ::-webkit-scrollbar {
+    width: 10px;
+    height:10px;
+}
+/* Track */
+.t-kanban ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+.t-kanban ::-webkit-scrollbar-thumb {
+    background: $secondary;
+}
+/* Handle on hover */
+.t-map ::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+}

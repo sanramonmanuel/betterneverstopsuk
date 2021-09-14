@@ -1,0 +1,194 @@
+/*Theme Name:Better Never Stops - Ideal Furniture Theme*/
+/*ThemeTheme URI:*/
+/*Description:This is the Official Theme for Ideal Furniture*/
+/*Designer: Manuel San Ramon*/
+/*Template:*/
+/*Version:1.0.0*/
+/*Tags:*/
+
+
+/* Branding */
+@import "branding-idealFurniture";
+
+/* Styling For All Components */
+@import "mixins";
+@import "_include-media.scss";
+@import "globals";
+
+/* Components - DO NOT DELETE*/
+@import "accordion";
+@import "breadcrumbs";
+@import "calendar";
+@import "card";
+@import "chart";
+@import "detail";
+@import "form";
+@import "html";
+@import "image";
+@import "kanban";
+@import "list";
+@import "login";
+@import "map";
+@import "menu";
+@import "modal";
+@import "profile";
+@import "search";
+@import "sidebar";
+@import "signup";
+@import "table";
+@import "user-menu";
+
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+/* Ideal Furniture UI */
+
+/* Dashboard */
+#x_element_page_19_1{
+    display: grid;
+    margin-top:15%;
+    margin-bottom:10%;
+}
+
+/* Ideal Furniture Logo Centered */
+.seccess-centered{
+    text-align: center;
+}
+
+
+// Calendar Legends UI
+.idfleg {
+    border: 3px solid $primary;
+    box-shadow: 5px 5px $primary;
+
+    .idflegends{
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: not-allowed;
+        justify-content: center;
+        margin: 5px;
+        padding: 2px 25px;
+    }
+
+    .idf_planning{
+        background: $statred;
+    }
+
+    .idf_waiting{
+        background: $statpurple;
+    }
+
+    .idf_confirmed{
+        background: $statorange;
+    }
+    
+    .idf_outfordelivery{
+        background: $statyellow;
+    }
+    
+    .idf_delivered{
+        background: $statgreen;
+    }
+}
+
+.idf-cards-15{
+    .t-card{
+        .header.t-card-header,
+        .header.t-card-header span{
+            background: #ffffff;
+            border-bottom:none;
+            color:$primary;
+            font-size:15px;
+            font-weight: bold;
+            text-align:center;
+        }
+    }
+}
+
+.pdf-btn{
+    background: $primary;
+    border:none;
+    border-radius: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 5%;
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited{
+        background: $primary;
+        border:none;
+        box-shadow: -5px 5px $secondary;
+        transform: translate(-4,-4);
+    }
+}
+
+.addProductToManifest {
+    border: 2px solid;
+    border-radius: 5px;
+    color: $primary;
+    background: none;
+    padding: 2px 5px;
+    outline: none;
+    transition: all .1s linear;
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited{
+        border: 2px solid $primary;
+        border-radius: 5px;
+        background:$primary;
+        color: white;
+    }
+}
+
+// Sales Order Banners
+.brand-banner{
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+
+    /* For Ideal Furniture Banner */
+    &.idf-brand{
+        background: $primary;
+        h2{
+            color: white;
+        }
+    }
+
+    /* For Furniture Village Banner */
+    @import "branding-furnitureVillage";
+    &.fv-brand{
+        background: $primary;
+        h2{
+            color: white;
+        }
+    }
+
+    /* For AIS Banner */
+    @import "branding-ais";
+    &.ais-brand{
+        h2{
+            color: $secondary;
+        }
+    }
+}
+
+/* Ideal Furniture Logo Centered */
+.seccess-centered{
+    text-align: center;
+}
+
+.idf-cards-15{
+    .t-card{
+        .header.t-card-header,
+        .header.t-card-header span{
+            background: #ffffff;
+            border-bottom:none;
+            color:$primary;
+            font-size:15px;
+            font-weight: bold;
+            text-align:center;
+        }
+    }
+}

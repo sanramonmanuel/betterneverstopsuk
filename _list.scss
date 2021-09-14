@@ -1,0 +1,152 @@
+/*============================================================================*/
+/* List Component */
+.t-list{
+    padding:1rem;
+    margin-bottom: 30px;
+    // @include media ('<tablet'){
+    //     padding:1rem 1rem;  
+    // }
+    .t-list-row{
+        background: white;
+        #field_block_{
+            display: grid;
+            place-items: center;
+        }
+    }
+    .list-row-item.list-layout-default {
+        @include shadows();
+        border-radius:1.5rem;
+        border:5px solid transparent;
+        margin: 15px auto;
+        padding: 1rem 3rem;
+        transition: all .1s ease-in-out;
+        @include media ('<tablet'){
+            border:5px solid $primary;
+            box-shadow: 5px 5px $secondary;
+        }
+        &:hover{
+            @include inshadow();
+            border:5px solid $primary;
+            box-shadow: 5px 5px $secondary;
+            transform: translateY(-1px);
+            position:inherit;
+        }
+    }
+    .list-row-item.list-layout-bordered-box {
+        border:3px solid $primary !important;
+        transition: all .1s ease-in-out;
+        &:hover{
+            box-shadow: 5px 5px $secondary;
+            transform: translateY(-1px);
+        }
+    }
+    label {
+        color:$primary;
+        display:inline-block;
+        font-size:13px;
+        font-weight:700;
+        letter-spacing:1px;
+        margin-bottom:5px;
+        max-width:100%;
+    }
+    .form-control{
+        background:none;
+        border:none;
+        border-bottom: 2px solid transparent;
+        border-radius: 0px;
+        box-shadow: none;
+        color:$primary;
+        font-weight: bold;
+        outline:none;
+        &:hover,
+        &:active,
+        &:focus{
+            border-bottom: 2px solid $primary;
+            box-shadow: none;
+            color:$primary;
+        }
+    }
+    .btn.btn-primary.btn-sm.m-l-xs{
+        float: left;
+        &:hover{
+            @include btnshadow();
+        }
+    }
+    .table-actions {
+        background:none;
+        border:none;
+    }
+    .btn.disabled {
+        @include norecord();
+    }
+    .filter-tabs {
+        background: none;
+        float: right;
+        margin: 5px auto;
+    }
+    .nav-tabs {
+        background:none;
+        border:none;
+        margin-left:10px;
+        // margin-top:-50px;
+        position:inherit;
+    }
+    .nav.nav-tabs > li > a{
+        @include monobtn();
+        border-radius:15px;
+        font-weight: bold;
+        margin: 2px;
+        padding: 5px 7px;
+        &:hover,
+        &:focus{
+            @include btnshadow();
+        }
+    }
+    @include media ('>tablet'){
+        .nav.nav-tabs > li > a{
+            @include monobtn();
+            border-radius: 15px;
+            padding: 5px 7px;
+            &:hover,
+            &:focus{
+                @include btnshadow();
+            }
+        }
+    }
+    .filter-tabs .nav-tabs > li.active > a{
+        @include btnshadow();
+        background:$primary;
+        color: white;
+    }
+    .btn.btn-primary {
+        background: $primary;
+        border:2px solid $primary;
+        outline:none;
+        transition: all .1s ease-in-out;
+        &:hover,
+        &:focus{
+            box-shadow: 0 2px 4px rgba(0,0,0,.3);
+        }
+    }
+    .pagination>.disabled>a,
+    .pagination>.disabled>span{
+        @include primarybtn(none);
+        &:hover{
+            @include hoverbtn();
+        }
+    }
+    .pagination-sm > li > a,
+    .pagination-sm > li > span{
+        @include primarybtn(none);
+        &:hover{
+            @include btnshadow();
+        }
+    }
+    .pagination>.active>a,
+    .pagination>.active>span{
+        @include btnshadow();
+    }
+    .img-responsive{
+        width: 100%;
+    }
+}
