@@ -117,10 +117,6 @@ option {
     font-size:15px;
 }
 
-.btn{
-    margin: 2px auto;
-    outline: none;
-}
 .noclick{
     pointer-events:none;
 }
@@ -160,6 +156,8 @@ option {
 }
 
 .btn{
+    margin: 2px auto;
+    outline: none;
     &:hover,
     &:active,
     &:focus{
@@ -183,27 +181,35 @@ option {
     .badge.badge-wh-2{
         @include stats($secondary);
     }
+
     .badge.badge-wh-3{
         @include stats($statlightb);
     }
+
     .badge.badge-wh-4{
         @include stats($statorange);
     }
+
     .badge.badge-wh-5{
         @include stats($statred);
     }
+
     .badge.badge-wh-6{
         padding: 5px 10px;
     }
+
     .badge.badge-wh-7{
         @include stats($statpink);
     }
+
     .badge.badge-wh-8{
         @include stats($statyellow);
     }
+
     .badge.badge-wh-9{
         @include stats ($primary);
     }
+
     .badge.badge-wh-10{
         @include stats ($statblack);
     }
@@ -222,6 +228,7 @@ option {
     position: fixed;
     right: 0;
     z-index: 99;
+
     i{
         color: white;
         background: $primary;
@@ -230,6 +237,7 @@ option {
         height: 40px;
         display:grid;
         place-items:center;
+
         &:hover{
             background: white;
             border:2px solid $primary;
@@ -252,6 +260,7 @@ option {
     position: fixed;
     left:0;
     z-index: 99;
+
     i{
         color: white;
         background: $primary;
@@ -260,11 +269,125 @@ option {
         height: 40px;
         display:grid;
         place-items:center;
+
         &:hover{
             background: white;
             border:2px solid $primary;
             @include btnshadow();
             color: $primary;
         }
+    }
+}
+
+/*============================================================================*/
+/*Button style */
+.btn-default,
+.btn.btn-default {
+    color: #ffffff;
+    background-color: #616060;
+    background-image: none;
+    border-color: #616060;
+    outline: none;
+    &:hover,
+    &:focus,
+    &:active{
+        color: #ffffff;
+        background-color: $Text;
+        border-color: $Text;
+        outline: none;
+    }
+}
+
+/*=======================================*/
+.btn-primary,
+.btn.btn-primary  {
+    color: #ffffff;
+    background-color: $primary;
+    background-image: none;
+    border-color: $primary;
+    outline: none;
+    &:hover{
+        background-color: $primary;
+        border-color: $primary;
+        color: #ffffff;
+    }
+    &:focus,
+    &:active{
+        background-color: $primary !important;
+        border-color: $primary !important;
+        color: #ffffff !important;
+        outline: none; 
+    }
+}
+
+/*=======================================*/
+.btn-success,
+.btn.btn-success {
+	color: #ffffff;
+	background-color: $statgreen;
+    background-image: none;
+	border-color: $statgreen;
+	outline: none;
+    &:hover,
+    &:focus,
+    &:active{
+        color: #ffffff;
+        background-color: $statgreen;
+        border-color: $statgreen;
+        outline: none;
+    }
+}
+
+/*=======================================*/
+.btn-info,
+.btn.btn-info{
+	color: #ffffff;
+	background-color: $statpurple;
+    background-image: none;
+	border-color: $statpurple;
+	outline: none; 
+    &:hover,
+    &:focus,
+    &:active{
+        color: #ffffff;
+        background-color: $statdarkpurple;
+        border-color: $statdarkpurple;
+        outline: none;
+    }
+}
+
+/*=======================================*/
+.btn-warning,
+.btn.btn-warning {
+	color: #ffffff;
+	background-color: $statorange;
+    background-image: none;
+	border-color: $statorange;
+	outline: none;
+    &:hover,
+    &:focus,
+    &:active{
+        color: #ffffff;
+        background-color: $statoranged;
+        border-color: $statoranged;
+        outline: none;
+    }
+}
+
+/*=======================================*/
+.btn-danger,
+.btn.btn-danger {
+	color: #ffffff;
+	background-color: $statred;
+    background-image: none;
+	border-color: $statred;
+	outline: none;
+    &:hover,
+    &:focus,
+    &:active{
+        color: #ffffff;
+        background-color: $statred;
+        border-color: $statred;
+        outline: none;
     }
 }

@@ -156,11 +156,6 @@ option {
   font-size: 15px;
 }
 
-.btn {
-  margin: 2px auto;
-  outline: none;
-}
-
 .noclick {
   pointer-events: none;
 }
@@ -202,6 +197,11 @@ option {
 .t-linkbutton .btn.btn-primary,
 .t-linkbutton .btn-primary {
   background: #333333;
+}
+
+.btn {
+  margin: 2px auto;
+  outline: none;
 }
 
 .btn:hover, .btn:active, .btn:focus {
