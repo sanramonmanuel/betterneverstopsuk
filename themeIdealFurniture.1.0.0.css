@@ -241,7 +241,7 @@ option {
 .t-detail .badge.badge-wh-3,
 .t-kanban .badge.badge-wh-3,
 .t-timeline .badge.badge-wh-3 {
-  background: #66ccff;
+  background: #00aaff;
   color: #ffffff;
   padding: 5px 10px;
 }
@@ -473,9 +473,9 @@ option {
 .btn-info,
 .btn.btn-info {
   color: #ffffff;
-  background-color: #9900ff;
+  background-color: #00aaff;
   background-image: none;
-  border-color: #9900ff;
+  border-color: #00aaff;
   outline: none;
 }
 
@@ -484,8 +484,8 @@ option {
 .btn.btn-info:focus,
 .btn.btn-info:active {
   color: #ffffff;
-  background-color: #280042;
-  border-color: #280042;
+  background-color: #0088cc;
+  border-color: #0088cc;
   outline: none;
 }
 

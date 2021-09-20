@@ -342,16 +342,16 @@ option {
 .btn-info,
 .btn.btn-info{
 	color: #ffffff;
-	background-color: $statpurple;
+	background-color: $statlightb;
     background-image: none;
-	border-color: $statpurple;
+	border-color: $statlightb;
 	outline: none; 
     &:hover,
     &:focus,
     &:active{
         color: #ffffff;
-        background-color: $statdarkpurple;
-        border-color: $statdarkpurple;
+        background-color: $statdarkblue;
+        border-color: $statdarkblue;
         outline: none;
     }
 }
