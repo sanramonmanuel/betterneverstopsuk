@@ -772,7 +772,7 @@ option {
   margin: 10px auto;
   padding: 1rem;
   /*active view setup*/
-  /* calender body */
+  /* calender header */
   /* calender week */
 }
 
@@ -790,7 +790,7 @@ option {
 
 .t-calendar .fc-center h2 {
   color: #424d67;
-  font-size: .8em;
+  font-size: .9em;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 0.5rem;
@@ -878,9 +878,9 @@ option {
 .t-calendar .fc-row.fc-widget-header table > thead > tr > th {
   border-style: dashed;
   color: #424d67;
+  font-size: 0.9em;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  font-size: 0.7em;
 }
 
 .t-calendar .fc-day-top {

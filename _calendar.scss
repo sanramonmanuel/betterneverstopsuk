@@ -22,7 +22,7 @@
 
     .fc-center h2{
         color: $primary;
-        font-size: .8em;
+        font-size: .9em;
         font-weight: 700;
         letter-spacing: 1px;
         padding: 0.5rem;
@@ -77,13 +77,13 @@
         @include hoverbtn();
     }
 
-    /* calender body */
+    /* calender header */
     .fc-row.fc-widget-header table>thead>tr>th{ 
         border-style:dashed;
         color:$primary;
+        font-size:0.9em;
         padding-bottom:1rem;
         padding-top:1rem;
-        font-size:0.7em;
     }
 
     .fc-day-top{
