@@ -6,45 +6,55 @@
     display:block;
     margin:10px auto;
     padding:1rem;
+
     .filter-tabs,
     .fc-toolbar.fc-header-toolbar{
         border-bottom: 1px dashed #ddd;
         margin-bottom: 0rem;
-        padding: 2rem;
+        padding: 1rem;
         margin:auto;
         display: flex;
     }
+
     ul.nav.nav-tabs{
-        padding:1rem 1rem;
+        padding:1rem;
     }
+
     .fc-center h2{
         color: $primary;
-        font-size: 25px;
+        font-size: .8em;
         font-weight: 700;
         letter-spacing: 1px;
         padding: 0.5rem;
         border:3px solid $primary;
         box-shadow: 5px 5px $primary;
     }
+
     .af-full-calendar-one .fc-state-default{
         text-shadow: none;
     }
+
     .fc-day-top.fc-today .fc-day-number{
         @include hoverbtn();
     }
+
     .fc-toolbar.fc-header-toolbar .fc-today-button{
         @include hoverbtn();
     }
+
     .fc-unthemed td.fc-today{
-        background: none;  
+        background: $prima1;
     }
+
     .fc-prev-button,
     .fc-next-button{    /* next and previous link */
         @include primarybtn(none);
+
         &:hover{
             @include hoverbtn();
         }
     }
+
     .fc-refreshEvent-button,
     .fc-myCalendar-button,
     .fc-myList-button,
@@ -52,26 +62,33 @@
     .fc-myWeek-button,
     .fc-myDay-button{   /* calender mode */
         @include primarybtn(none);
+
         &:hover{
             @include hoverbtn();
         }
     }
+
+    /*active view setup*/
     .fc-myCalendar-button.fc-state-active,
     .fc-myList-button.fc-state-active,
     .fc-myMonth-button.fc-state-active,
     .fc-myWeek-button.fc-state-active,
-    .fc-myDay-button.fc-state-active{   /*active view setup*/
+    .fc-myDay-button.fc-state-active{   
         @include hoverbtn();
     }
-    .fc-row.fc-widget-header table>thead>tr>th{ /* calender body */
+
+    /* calender body */
+    .fc-row.fc-widget-header table>thead>tr>th{ 
         border-style:dashed;
         color:$primary;
         padding-bottom:1rem;
         padding-top:1rem;
-        font-size:20px;
+        font-size:0.7em;
     }
+
     .fc-day-top{
         text-align: left;
+
         .fc-day-number{
             @include primarybtn(none);
             display:inline-block;
@@ -79,18 +96,22 @@
             min-width:20px;
             text-align:center;
             text-decoration:none;
+
             &:hover{
                 @include hoverbtn();
             } 
         }
     }
+
     .fc-body .fc-event-container .fc-event{
         margin:2px 5px;
         padding:3px 13px;
     }
+
     .fc-day{
         @include calborder();
     }
+
     .fc-head-container.fc-widget-header{
         border-bottom:none;
         border-left:1px dashed #ddd;
@@ -98,44 +119,55 @@
         border-top:unset;
         display:block;
     }
+
     .fc-body tr td.fc-widget-content{
         @include calborder();
     }
+
     thead th.fc-day-header{
         border-right:1px dashed #ddd;
     }
+
     td.fc-event-container{
         padding-top:1rem;
     }
+
     .fc-list-heading-main,
     .fc-list-heading-alt {
         color:$primary;
         text-decoration:none;
     }
+
     .fc-list-heading-alt{
         color:#B5B5C3;
         text-decoration:none;
     }
+
     .fc-list-item-time.fc-widget-content{
         padding-right:10rem;
         color:#B5B5C3;
     }
+
     .fc-unthemed .fc-list-heading td{
         background:#f3f6f9;
     }
+
     td.fc-list-item-title.fc-widget-content{
         color:$primary;
     }
-    .fc-row.fc-widget-header table>thead>tr>th a{  /* calender week */
+
+     /* calender week */
+    .fc-row.fc-widget-header table>thead>tr>th a{ 
         color:$primary;
         text-decoration:none;
     }
+
     .fc-axis.fc-time{
         color:$primary;
     }
+
     .fc-axis.fc-widget-content span{
         color:$primary;
         font-weight: bold;
     }
-
 }

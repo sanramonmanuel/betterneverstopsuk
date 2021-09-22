@@ -771,13 +771,16 @@ option {
   display: block;
   margin: 10px auto;
   padding: 1rem;
+  /*active view setup*/
+  /* calender body */
+  /* calender week */
 }
 
 .t-calendar .filter-tabs,
 .t-calendar .fc-toolbar.fc-header-toolbar {
   border-bottom: 1px dashed #ddd;
   margin-bottom: 0rem;
-  padding: 2rem;
+  padding: 1rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -785,12 +788,12 @@ option {
 }
 
 .t-calendar ul.nav.nav-tabs {
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .t-calendar .fc-center h2 {
   color: #01556a;
-  font-size: 25px;
+  font-size: .8em;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 0.5rem;
@@ -816,7 +819,7 @@ option {
 }
 
 .t-calendar .fc-unthemed td.fc-today {
-  background: none;
+  background: #d3d8e3;
 }
 
 .t-calendar .fc-prev-button,
@@ -870,19 +873,17 @@ option {
 .t-calendar .fc-myMonth-button.fc-state-active,
 .t-calendar .fc-myWeek-button.fc-state-active,
 .t-calendar .fc-myDay-button.fc-state-active {
-  /*active view setup*/
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   outline: none;
 }
 
 .t-calendar .fc-row.fc-widget-header table > thead > tr > th {
-  /* calender body */
   border-style: dashed;
   color: #01556a;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  font-size: 20px;
+  font-size: 0.7em;
 }
 
 .t-calendar .fc-day-top {
@@ -964,7 +965,6 @@ option {
 }
 
 .t-calendar .fc-row.fc-widget-header table > thead > tr > th a {
-  /* calender week */
   color: #01556a;
   text-decoration: none;
 }
