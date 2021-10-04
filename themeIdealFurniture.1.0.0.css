@@ -1154,6 +1154,7 @@ option {
 }
 
 .t-detail a {
+  color: #a6b97e;
   font-weight: bold;
   text-decoration: none;
 }
