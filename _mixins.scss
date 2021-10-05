@@ -120,6 +120,12 @@
     transform: scale(1.01);
     outline: none;
 }
+
+@mixin activebtn {
+    background: $secondary;
+    outline: none;
+}
+
 @mixin stats ($statcolor) {
     background: $statcolor;
     color:#ffffff;

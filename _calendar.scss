@@ -73,8 +73,7 @@
     .fc-myMonth-button.fc-state-active,
     .fc-myWeek-button.fc-state-active,
     .fc-myDay-button.fc-state-active{   
-        background: $secondary;
-        outline: none;
+        @include activebtn();
     }
 
     /* calender header */

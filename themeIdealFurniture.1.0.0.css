@@ -1537,6 +1537,43 @@ input {
   color: white;
 }
 
+.t-html a {
+  position: relative;
+}
+
+.t-html a:before {
+  background-color: #a6b97e;
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform .25s linear;
+  transition: -webkit-transform .25s linear;
+  transition: transform .25s linear;
+  transition: transform .25s linear, -webkit-transform .25s linear;
+  width: 100%;
+}
+
+.t-html a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+a {
+  color: #a6b97e;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
 /*============================================================================*/
 /* Image Component */
 .t-image.x-type-image .caption {
