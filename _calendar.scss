@@ -2,10 +2,10 @@
 /* Calendar Component */
 .t-calendar{
     @include shadows;
-    border-radius:15px;
+    border-radius: 1rem;
     display:block;
-    margin:10px auto;
-    padding:1rem;
+    margin:0.625rem auto;
+    padding: 1rem;
 
     .filter-tabs,
     .fc-toolbar.fc-header-toolbar{
@@ -13,7 +13,6 @@
         margin-bottom: 0rem;
         padding: 1rem;
         margin:auto;
-        // display: flex;
     }
 
     ul.nav.nav-tabs{
@@ -27,7 +26,7 @@
         letter-spacing: 1px;
         padding: 0.5rem;
         border:3px solid $primary;
-        box-shadow: 5px 5px $primary;
+        box-shadow: 0.25rem 0.25rem $primary;
     }
 
     .af-full-calendar-one .fc-state-default{
@@ -74,7 +73,8 @@
     .fc-myMonth-button.fc-state-active,
     .fc-myWeek-button.fc-state-active,
     .fc-myDay-button.fc-state-active{   
-        @include hoverbtn();
+        background: $secondary;
+        outline: none;
     }
 
     /* calender header */
@@ -92,8 +92,8 @@
         .fc-day-number{
             @include primarybtn(none);
             display:inline-block;
-            min-height:20px;
-            min-width:20px;
+            min-height:1rem;
+            min-width:1rem;
             text-align:center;
             text-decoration:none;
 
@@ -104,8 +104,8 @@
     }
 
     .fc-body .fc-event-container .fc-event{
-        margin:2px 5px;
-        padding:3px 13px;
+        margin: 0.125rem 0.5rem;
+        padding: 0.125rem 0.5rem;
     }
 
     .fc-day{
