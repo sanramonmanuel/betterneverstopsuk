@@ -23,8 +23,8 @@ body, p, a {
 
 body {
   background: white;
-  font-size: 18px;
-  margin: auto 10px;
+  font-size: 1.25rem;
+  margin: auto 0.5rem;
 }
 
 ::-moz-selection {
@@ -42,7 +42,7 @@ body {
 /*connection-field*/
 .select2-container {
   border: 2px solid transparent;
-  border-radius: 5px;
+  border-radius: .25rem;
 }
 
 .select2-container:hover {
