@@ -453,9 +453,9 @@ option {
 .btn-success,
 .btn.btn-success {
   color: #ffffff;
-  background-color: #80B31B;
+  background-color: #7fb11b;
   background-image: none;
-  border-color: #80B31B;
+  border-color: #7fb11b;
   outline: none;
 }
 
@@ -464,8 +464,8 @@ option {
 .btn.btn-success:focus,
 .btn.btn-success:active {
   color: #ffffff;
-  background-color: #80B31B;
-  border-color: #80B31B;
+  background-color: #7fb11b;
+  border-color: #7fb11b;
   outline: none;
 }
 

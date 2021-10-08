@@ -64,11 +64,11 @@
 
     .idflegends{
         border: none;
-        border-radius: 5px;
+        border-radius: .5rem;
         color: white;
         cursor: not-allowed;
         justify-content: center;
-        margin: 5px;
+        margin: .25rem;
         padding: 2px 25px;
     }
 
@@ -100,7 +100,7 @@
             background: #ffffff;
             border-bottom:none;
             color:$primary;
-            font-size:15px;
+            font-size:1rem;
             font-weight: bold;
             text-align:center;
         }
@@ -127,10 +127,10 @@
 
 .addProductToManifest {
     border: 2px solid;
-    border-radius: 5px;
+    border-radius: .5rem;
     color: $primary;
     background: none;
-    padding: 2px 5px;
+    padding: .5rem .625rem;
     outline: none;
     transition: all .1s linear;
     &:hover,
@@ -138,7 +138,7 @@
     &:focus,
     &:visited{
         border: 2px solid $primary;
-        border-radius: 5px;
+        border-radius: .5rem;
         background:$primary;
         color: white;
     }
@@ -186,7 +186,7 @@
             background: #ffffff;
             border-bottom:none;
             color:$primary;
-            font-size:15px;
+            font-size:1rem;
             font-weight: bold;
             text-align:center;
         }

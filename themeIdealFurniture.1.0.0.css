@@ -3513,13 +3513,13 @@ a:hover, a:focus {
 
 .idfleg .idflegends {
   border: none;
-  border-radius: 5px;
+  border-radius: .5rem;
   color: white;
   cursor: not-allowed;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5px;
+  margin: .25rem;
   padding: 2px 25px;
 }
 
@@ -3548,7 +3548,7 @@ a:hover, a:focus {
   background: #ffffff;
   border-bottom: none;
   color: #424d67;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
 }
@@ -3573,10 +3573,10 @@ a:hover, a:focus {
 
 .addProductToManifest {
   border: 2px solid;
-  border-radius: 5px;
+  border-radius: .5rem;
   color: #424d67;
   background: none;
-  padding: 2px 5px;
+  padding: .5rem .625rem;
   outline: none;
   -webkit-transition: all .1s linear;
   transition: all .1s linear;
@@ -3584,7 +3584,7 @@ a:hover, a:focus {
 
 .addProductToManifest:hover, .addProductToManifest:active, .addProductToManifest:focus, .addProductToManifest:visited {
   border: 2px solid #424d67;
-  border-radius: 5px;
+  border-radius: .5rem;
   background: #424d67;
   color: white;
 }
@@ -3627,7 +3627,7 @@ a:hover, a:focus {
   background: #ffffff;
   border-bottom: none;
   color: #424d67;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
 }
