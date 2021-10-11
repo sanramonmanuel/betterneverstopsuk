@@ -3,20 +3,22 @@
 .t-datatable{
     margin:10px auto;
     padding:1rem;
+
     .table-responsive{
         @include shadows();
         background-color:#ffffff;
         border-radius:1rem;
         border: 3px solid $primary;
         box-shadow: 5px 5px $primary;
-        padding:2rem;
+        padding:1rem;
         text-align:left;
     }
+
     h3{
         color:$primary;
         font-weight: bold;
         margin:0;
-        padding: 0 0 10px 10px;
+        padding: 0 0 .5rem .5rem;
         @include media ('<tablet'){
         border-bottom-style: inset;
         border-color: $secondary;
