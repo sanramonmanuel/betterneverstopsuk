@@ -25,3 +25,12 @@ $(".anchorButton").click(function() {
         scrollTop: $("#x_element_page_7_1").offset().top
     }, 750);
 });
+
+$(document).ready(function(){
+    $('.tabs').tabs();
+    $('#x_element_page_265_32').appendTo('#Goods In');
+    $('#x_element_page_265_34').appendTo('#Goods Out');
+    $('#x_element_page_265_1').appendTo('#Holidays');
+    $('#x_element_page_265_42').appendTo('#Meetings');
+    $('#x_element_page_265_53').appendTo('#All Events');
+});

@@ -24,8 +24,8 @@ body, p, a {
 
 body {
   background: white;
-  font-size: 18px;
-  margin: auto 10px;
+  font-size: 1.5rem;
+  margin: auto 0.5rem;
 }
 
 ::-moz-selection {
@@ -43,7 +43,7 @@ body {
 /*connection-field*/
 .select2-container {
   border: 2px solid transparent;
-  border-radius: 5px;
+  border-radius: .25rem;
 }
 
 .select2-container:hover {
@@ -403,6 +403,133 @@ option {
   color: #009de0;
 }
 
+/*============================================================================*/
+/*Button style */
+.btn-default,
+.btn.btn-default {
+  color: #ffffff;
+  background-color: #616060;
+  background-image: none;
+  border-color: #616060;
+  outline: none;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active,
+.btn.btn-default:hover,
+.btn.btn-default:focus,
+.btn.btn-default:active {
+  color: #ffffff;
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  outline: none;
+}
+
+/*=======================================*/
+.btn-primary,
+.btn.btn-primary {
+  color: #ffffff;
+  background-color: #009de0;
+  background-image: none;
+  border-color: #009de0;
+  outline: none;
+}
+
+.btn-primary:hover,
+.btn.btn-primary:hover {
+  background-color: #009de0;
+  border-color: #009de0;
+  color: #ffffff;
+}
+
+.btn-primary:focus, .btn-primary:active,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  background-color: #009de0 !important;
+  border-color: #009de0 !important;
+  color: #ffffff !important;
+  outline: none;
+}
+
+/*=======================================*/
+.btn-success,
+.btn.btn-success {
+  color: #ffffff;
+  background-color: #80B31B;
+  background-image: none;
+  border-color: #80B31B;
+  outline: none;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active,
+.btn.btn-success:hover,
+.btn.btn-success:focus,
+.btn.btn-success:active {
+  color: #ffffff;
+  background-color: #80B31B;
+  border-color: #80B31B;
+  outline: none;
+}
+
+/*=======================================*/
+.btn-info,
+.btn.btn-info {
+  color: #ffffff;
+  background-color: #00b0f0;
+  background-image: none;
+  border-color: #00b0f0;
+  outline: none;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active,
+.btn.btn-info:hover,
+.btn.btn-info:focus,
+.btn.btn-info:active {
+  color: #ffffff;
+  background-color: #0088cc;
+  border-color: #0088cc;
+  outline: none;
+}
+
+/*=======================================*/
+.btn-warning,
+.btn.btn-warning {
+  color: #ffffff;
+  background-color: #ff9900;
+  background-image: none;
+  border-color: #ff9900;
+  outline: none;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active,
+.btn.btn-warning:hover,
+.btn.btn-warning:focus,
+.btn.btn-warning:active {
+  color: #ffffff;
+  background-color: #cc7a00;
+  border-color: #cc7a00;
+  outline: none;
+}
+
+/*=======================================*/
+.btn-danger,
+.btn.btn-danger {
+  color: #ffffff;
+  background-color: #cc0033;
+  background-image: none;
+  border-color: #cc0033;
+  outline: none;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active,
+.btn.btn-danger:hover,
+.btn.btn-danger:focus,
+.btn.btn-danger:active {
+  color: #ffffff;
+  background-color: #cc0033;
+  border-color: #cc0033;
+  outline: none;
+}
+
 /* Components - DO NOT DELETE*/
 /*============================================================================*/
 /* Accordion Component */
@@ -527,16 +654,16 @@ option {
   list-style-type: none;
   padding: 0;
   background: none;
-  margin-top: 20px;
-  padding-left: 20px;
-  margin-left: 5px;
+  margin-top: 1.25rem;
+  padding-left: 1.25rem;
+  margin-left: 0.25rem;
 }
 
 .t-breadcrumb .breadcrumb-wrap .breadcrumb li {
   display: inline-block;
   position: relative;
   color: #ffffff;
-  margin-left: 5px;
+  margin-left: 0.25rem;
 }
 
 .t-breadcrumb .breadcrumb-wrap .breadcrumb li:last-child a {
@@ -578,7 +705,7 @@ option {
 .t-breadcrumb .breadcrumb-wrap .breadcrumb li::after {
   content: '';
   position: absolute;
-  left: 6px;
+  left: 0.375rem;
   /* important */
   height: 20%;
   width: 100%;
@@ -609,7 +736,7 @@ option {
   position: relative;
   line-height: 2.5;
   outline: none;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   text-decoration: none;
 }
 
@@ -628,7 +755,7 @@ option {
 
 .t-breadcrumb .breadcrumb-wrap .breadcrumb li:first-child::before,
 .t-breadcrumb .breadcrumb-wrap .breadcrumb li:first-child::after {
-  left: 5px;
+  left: .25rem;
   background: white;
 }
 
@@ -641,36 +768,36 @@ option {
 .t-calendar {
   -webkit-box-shadow: 0px 5px 15px #959da533;
           box-shadow: 0px 5px 15px #959da533;
-  border-radius: 15px;
+  border-radius: 1rem;
   display: block;
-  margin: 10px auto;
+  margin: 0.625rem auto;
   padding: 1rem;
+  /*active view setup*/
+  /* calender header */
+  /* calender week */
 }
 
 .t-calendar .filter-tabs,
 .t-calendar .fc-toolbar.fc-header-toolbar {
   border-bottom: 1px dashed #ddd;
   margin-bottom: 0rem;
-  padding: 2rem;
+  padding: 1rem;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .t-calendar ul.nav.nav-tabs {
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .t-calendar .fc-center h2 {
   color: #009de0;
-  font-size: 25px;
+  font-size: .9em;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 0.5rem;
   border: 3px solid #009de0;
-  -webkit-box-shadow: 5px 5px #009de0;
-          box-shadow: 5px 5px #009de0;
+  -webkit-box-shadow: 0.25rem 0.25rem #009de0;
+          box-shadow: 0.25rem 0.25rem #009de0;
 }
 
 .t-calendar .af-full-calendar-one .fc-state-default {
@@ -690,7 +817,7 @@ option {
 }
 
 .t-calendar .fc-unthemed td.fc-today {
-  background: none;
+  background: #d3d8e3;
 }
 
 .t-calendar .fc-prev-button,
@@ -744,19 +871,15 @@ option {
 .t-calendar .fc-myMonth-button.fc-state-active,
 .t-calendar .fc-myWeek-button.fc-state-active,
 .t-calendar .fc-myDay-button.fc-state-active {
-  /*active view setup*/
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  background: #cc0033;
   outline: none;
 }
 
 .t-calendar .fc-row.fc-widget-header table > thead > tr > th {
-  /* calender body */
   border-style: dashed;
   color: #009de0;
+  font-size: 0.9em;
   padding-bottom: 1rem;
-  padding-top: 1rem;
-  font-size: 20px;
 }
 
 .t-calendar .fc-day-top {
@@ -772,8 +895,8 @@ option {
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
   display: inline-block;
-  min-height: 20px;
-  min-width: 20px;
+  min-height: 1rem;
+  min-width: 1rem;
   text-align: center;
   text-decoration: none;
 }
@@ -785,8 +908,8 @@ option {
 }
 
 .t-calendar .fc-body .fc-event-container .fc-event {
-  margin: 2px 5px;
-  padding: 3px 13px;
+  margin: 0.125rem 0.5rem;
+  padding: 0.125rem 0.5rem;
 }
 
 .t-calendar .fc-day {
@@ -838,7 +961,6 @@ option {
 }
 
 .t-calendar .fc-row.fc-widget-header table > thead > tr > th a {
-  /* calender week */
   color: #009de0;
   text-decoration: none;
 }
@@ -1031,6 +1153,7 @@ option {
 }
 
 .t-detail a {
+  color: #cc0033;
   font-weight: bold;
   text-decoration: none;
 }
@@ -1042,7 +1165,6 @@ option {
 .t-detail .img-responsive {
   border: 5px solid #ffffff;
   margin: 10px auto;
-  outline: 5px solid #009de0;
 }
 
 /*============================================================================*/
@@ -1413,6 +1535,43 @@ input {
 
 .t-html .backbtn .fas {
   color: white;
+}
+
+.t-html a {
+  position: relative;
+}
+
+.t-html a:before {
+  background-color: #cc0033;
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform .25s linear;
+  transition: -webkit-transform .25s linear;
+  transition: transform .25s linear;
+  transition: transform .25s linear, -webkit-transform .25s linear;
+  width: 100%;
+}
+
+.t-html a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+a {
+  color: #cc0033;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
 }
 
 /*============================================================================*/
@@ -2960,7 +3119,7 @@ input {
   border: 3px solid #009de0;
   -webkit-box-shadow: 5px 5px #009de0;
           box-shadow: 5px 5px #009de0;
-  padding: 2rem;
+  padding: 1rem;
   text-align: left;
 }
 
@@ -2968,7 +3127,7 @@ input {
   color: #009de0;
   font-weight: bold;
   margin: 0;
-  padding: 0 0 10px 10px;
+  padding: 0 0 .5rem .5rem;
 }
 
 @media (max-width: 767px) {
