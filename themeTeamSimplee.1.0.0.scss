@@ -58,3 +58,35 @@
         }
     }
 }
+
+// Calendar Legends UI
+.simpleeCalendars {
+    border: 3px solid $primary;
+    box-shadow: 5px 5px $primary;
+
+    .simpleeCal{
+        border: none;
+        border-radius: .5rem;
+        color: white;
+        cursor: not-allowed;
+        justify-content: center;
+        margin: .25rem;
+        padding: 2px 25px;
+    }
+
+    .meeting{
+        background: $statyellow;
+    }
+
+    .goodsOut{
+        background: $statdarkblue;
+    }
+    
+    .goodsIn{
+        background: $secondary;
+    }
+    
+    .holiday{
+        background: $statgreen;
+    }
+}

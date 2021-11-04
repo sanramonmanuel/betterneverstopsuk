@@ -60,18 +60,8 @@
   transition: color 0.28s ease, background-color 0.28s ease;
 }
 
-.tabs .tab a:focus, .tabs .tab a.active {
+.tabs .tab a:focus, .tabs .tab a:hover, .tabs .tab a:active {
   color: #ea6220;
-  outline: none;
-}
-
-.tabs .tab a:hover, .tabs .tab a:active {
-  color: #fff;
-}
-
-.tabs .tab a:hover {
-  background-color: transparent;
-  color: #ee6e73;
 }
 
 .tabs .tab.disabled a,
