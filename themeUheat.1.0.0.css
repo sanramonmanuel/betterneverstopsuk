@@ -2179,7 +2179,7 @@ a:hover, a:focus {
 
 @media (max-width: 767px) {
   .t-menuitem .navbar-default .navbar-nav > li > a {
-    color: #333333;
+    color: white;
   }
 }
 
