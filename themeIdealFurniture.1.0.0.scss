@@ -192,3 +192,32 @@
         }
     }
 }
+
+.holidayPage{
+    .t-datatable{
+        margin: 0;
+        padding: 0;
+
+        .table-responsive{
+            border:none;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        .table-actions{
+            display: none;
+        }
+
+        table>thead>tr>th{
+            display: none;
+        }
+
+        .table-wrap>.table tr{
+            border:none;
+        }
+
+        .table-hover>tbody>tr:hover{
+            @include cleaner();
+        }
+    }
+}

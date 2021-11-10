@@ -3630,3 +3630,34 @@ a:hover, a:focus {
   font-weight: bold;
   text-align: center;
 }
+
+.holidayPage .t-datatable {
+  margin: 0;
+  padding: 0;
+}
+
+.holidayPage .t-datatable .table-responsive {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+}
+
+.holidayPage .t-datatable .table-actions {
+  display: none;
+}
+
+.holidayPage .t-datatable table > thead > tr > th {
+  display: none;
+}
+
+.holidayPage .t-datatable .table-wrap > .table tr {
+  border: none;
+}
+
+.holidayPage .t-datatable .table-hover > tbody > tr:hover {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}

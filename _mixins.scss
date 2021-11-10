@@ -105,6 +105,12 @@
     border:none;
 }
 
+@mixin cleaner {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
 @mixin linkbtn ($txtform) {
     color:$secondary;
     font-weight: 700;
