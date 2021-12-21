@@ -1,10 +1,14 @@
 /*============================================================================*/
 /* Profile Component */
 .t-profilecomponent {
-    @include shadows();
-    border-radius:15px;
-    margin:10px auto;
-    padding:1rem 3rem;
+    border-radius:1rem;
+    margin:.5rem auto;
+    padding:1rem;
+
+    @include media ('>phone'){
+        @include shadows();
+    }
+
     .form-horizontal {
         @include shadows();
         display:inline-block;

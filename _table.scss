@@ -24,9 +24,11 @@
         border-color: $secondary;
         }
     }
+
     .tb-select-row:hover{
         @include hoverbtn();
     }
+
    .input-sm{
        @include clean();
         border-bottom-right-radius: 3px;
@@ -38,33 +40,42 @@
         height: 30px;
         line-height: 1.5;
     }
+
    .input-sm:focus{
         background: none;
         box-shadow: none;
     }
+
     .btn.btn-primary.btn-sm.m-l-xs.t-refresh-button{
+
         &:hover{
             @include defaulthov;
         }
     }
+
     .filter-tabs {
         background:none;
         float:right;
     }
+
     .filters-box-display .filter-items{
         border:1px dashed $primary;
+
         .filter-item{
             background-color:$primary;
             color: #ffffff;
+
             i{
                 background-color:$secondary;
                 color: #ffffff;
+
                 &:hover{
                     color:$primary;
                 }
             }
         }
     }
+    
    .table-wrap>.table tr{
         background-color:#ffffff;
         border-bottom: 1px solid $prima1;
@@ -144,7 +155,7 @@
     }
     table>thead>tr>th{
         border:none;
-        color:$lighttext;
+        color: $lighttext;
         font-size:1rem;
         font-weight:bold;
         letter-spacing:1px;

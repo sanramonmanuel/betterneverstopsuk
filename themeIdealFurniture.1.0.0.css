@@ -1208,7 +1208,6 @@ option {
   font-weight: 700;
   letter-spacing: 1px;
   text-align: left;
-  text-transform: uppercase;
 }
 
 .t-form .form-control {
@@ -1995,8 +1994,7 @@ a:hover, a:focus {
 }
 
 .t-logincomponent .control-label {
-  display: none;
-  color: #424d67;
+  color: #a6b97e;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -2154,7 +2152,7 @@ a:hover, a:focus {
 
 @media (max-width: 767px) {
   .t-menuitem .navbar.navbar-default {
-    background: none;
+    background: #424d67;
   }
 }
 
@@ -2162,9 +2160,16 @@ a:hover, a:focus {
 .t-menuitem .navbar-default .navbar-nav > .active > a:hover,
 .t-menuitem .navbar-default .navbar-nav > .active > a:focus {
   color: white;
-  background-color: transparent;
   -webkit-box-shadow: inset 0 5px #a6b97e;
           box-shadow: inset 0 5px #a6b97e;
+}
+
+@media (max-width: 767px) {
+  .t-menuitem .navbar-default .navbar-nav > .active > a,
+  .t-menuitem .navbar-default .navbar-nav > .active > a:hover,
+  .t-menuitem .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #a6b97e;
+  }
 }
 
 .t-menuitem .navbar-default .navbar-nav > li > a {
@@ -2179,20 +2184,22 @@ a:hover, a:focus {
 
 @media (max-width: 767px) {
   .t-menuitem .navbar-default .navbar-nav > li > a {
-    color: #424d67;
+    color: white;
+    line-height: 1.5em;
   }
 }
 
 .t-menuitem .navbar-default .navbar-nav > li > a:hover, .t-menuitem .navbar-default .navbar-nav > li > a:active, .t-menuitem .navbar-default .navbar-nav > li > a:focus {
   -webkit-box-shadow: inset 0 5px #a6b97e;
           box-shadow: inset 0 5px #a6b97e;
+  background: #a6b97e;
 }
 
 @media (max-width: 767px) {
   .t-menuitem .navbar-default .navbar-nav > li > a:hover, .t-menuitem .navbar-default .navbar-nav > li > a:active, .t-menuitem .navbar-default .navbar-nav > li > a:focus {
     border: none;
     border-left: 5px solid #a6b97e;
-    background: #424d67;
+    background: #a6b97e;
     -webkit-box-shadow: none;
             box-shadow: none;
     color: white;
@@ -2512,11 +2519,16 @@ a:hover, a:focus {
 /*============================================================================*/
 /* Profile Component */
 .t-profilecomponent {
-  -webkit-box-shadow: 0px 5px 15px #959da533;
-          box-shadow: 0px 5px 15px #959da533;
-  border-radius: 15px;
-  margin: 10px auto;
-  padding: 1rem 3rem;
+  border-radius: 1rem;
+  margin: .5rem auto;
+  padding: 1rem;
+}
+
+@media (min-width: 361px) {
+  .t-profilecomponent {
+    -webkit-box-shadow: 0px 5px 15px #959da533;
+            box-shadow: 0px 5px 15px #959da533;
+  }
 }
 
 .t-profilecomponent .form-horizontal {
