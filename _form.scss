@@ -44,7 +44,7 @@
         line-height:1.429;
         margin:auto -1px;
         padding:5px 15px;
-        width:100%;
+        // width:100%; this was to allow shorter form fields
         &:hover{
             border:2px solid $primary;
         }
