@@ -199,6 +199,7 @@
     table a:not(.btn){
         text-decoration:none;
     }
+    // This is the refresh, filter, search bar
     .table-actions{
         @include clean();
         margin-top:30px;
@@ -267,5 +268,32 @@
         background: $secondary;
         outline:none;
         color: white;
+    }
+}
+
+
+/* CustomTable Component */
+.borderless-table{
+    &.t-datatable{
+        .table-responsive{
+            border: none;
+            box-shadow: none;
+            padding: 0;
+            text-align:left;
+        }
+
+        .table-actions{
+            display: none;
+        }
+
+        .table-wrap>.table tr{
+            border:none;
+        }
+
+        .table-hover>tbody>tr:hover{
+            background: none;
+            border:none;
+            box-shadow: none;
+        }
     }
 }
