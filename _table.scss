@@ -149,9 +149,13 @@
         }
     }
     .table-hover>tbody>tr:hover{
-        background: $prima1;
-        border-bottom: 1px solid $primary;
-        box-shadow: 0 -1px $primary;
+        // background: $prima1;
+        // border-bottom: 1px solid $primary;
+        // box-shadow: 0 -1px $primary;
+
+        background-color:#ffffff;
+        border-bottom: 1px solid $prima1;
+        box-shadow: none;
     }
     table>thead>tr>th{
         border:none;

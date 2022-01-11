@@ -8,6 +8,10 @@
 /* Font */
 /* Branding */
 /* Styling For All Components */
+.img-center {
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
   line-height: normal;
@@ -56,6 +60,10 @@ body {
 
 .select2-container--classic.select2-container--open .select2-selection--multiple {
   border: 1px solid #009de0;
+}
+
+.select2-container--open {
+  z-index: 1060;
 }
 
 .select2-results__options {
@@ -983,7 +991,7 @@ option {
   -webkit-box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
           box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
   margin: 10px auto;
-  padding: 1rem 3rem;
+  padding: .5rem;
 }
 
 .t-card .af-card-component:hover {
@@ -1199,8 +1207,7 @@ option {
   color: #009de0;
   font-weight: bold;
   margin: 10px auto;
-  padding: 1rem;
-  text-align: center;
+  padding: .5rem;
 }
 
 .t-form .lbl {
@@ -1461,6 +1468,11 @@ option {
 } */
 input {
   accent-color: #009de0;
+}
+
+.short-field .form-control {
+  min-width: 2em;
+  max-width: 12vw;
 }
 
 /*============================================================================*/
@@ -3295,10 +3307,10 @@ a:hover, a:focus {
 }
 
 .t-datatable .table-hover > tbody > tr:hover {
-  background: #d3d8e3;
-  border-bottom: 1px solid #009de0;
-  -webkit-box-shadow: 0 -1px #009de0;
-          box-shadow: 0 -1px #009de0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d3d8e3;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .t-datatable table > thead > tr > th {
@@ -3474,6 +3486,30 @@ a:hover, a:focus {
   background: #cc0033;
   outline: none;
   color: white;
+}
+
+/* CustomTable Component */
+.borderless-table.t-datatable .table-responsive {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  text-align: left;
+}
+
+.borderless-table.t-datatable .table-actions {
+  display: none;
+}
+
+.borderless-table.t-datatable .table-wrap > .table tr {
+  border: none;
+}
+
+.borderless-table.t-datatable .table-hover > tbody > tr:hover {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /*============================================================================*/

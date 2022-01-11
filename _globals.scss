@@ -40,6 +40,11 @@ body{
 .select2-container--classic.select2-container--open .select2-selection--multiple {
     border:1px solid $primary;
 }
+
+.select2-container--open{
+    z-index: 1060;
+}
+
 .select2-results__options{
     color:$primary;
     font-weight:bold;
@@ -391,3 +396,4 @@ option {
         outline: none;
     }
 }
+
