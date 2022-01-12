@@ -29,6 +29,18 @@ function checkIfWebInquiriesHasLoaded() {
         $('#x_element_page_8_9 .af-card-component').on('click', function() {
             $('#x_element_page_8_3 > div.table-responsive > div.filter-tabs > ul > li:nth-child(5) > a').click()
         });
+
+        $('#x_element_page_8_10 .af-card-component').on('click', function() {
+            $('#x_element_page_8_3 > div.table-responsive > div.filter-tabs > ul > li:nth-child(6) > a').click()
+        });
+
+        $('#x_element_page_8_11 .af-card-component').on('click', function() {
+            $('#x_element_page_8_3 > div.table-responsive > div.filter-tabs > ul > li:nth-child(7) > a').click()
+        });
+
+        $('#x_element_page_8_12 .af-card-component').on('click', function() {
+            $('#x_element_page_8_3 > div.table-responsive > div.filter-tabs > ul > li:nth-child(8) > a').click()
+        });
     }
 }
 checkIfWebInquiriesHasLoaded();
