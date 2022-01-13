@@ -986,11 +986,11 @@ option {
 /* Card Component */
 .t-card .af-card-component {
   background: #ffffff;
-  border-radius: 15px;
+  border-radius: 1rem;
   border: none;
   -webkit-box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
           box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
-  margin: 10px auto;
+  margin: .5rem auto;
   padding: .5rem;
 }
 
@@ -1004,14 +1004,14 @@ option {
   background: #ffffff;
   border-bottom: none;
   color: #009de0;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
 }
 
 .t-card .con {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
   position: relative;
 }
 
@@ -1032,7 +1032,7 @@ option {
 
 .t-card .val.t-card-value {
   color: #cc0033;
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: bold;
 }
 
